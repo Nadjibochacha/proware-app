@@ -4,6 +4,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Services from './pages/services';
 import Team from './pages/team';
+import Contact from './pages/contact';
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
         <Route path='/About' element={<About/>}/> 
         <Route path='/Services' element={<Services/>}/>
         <Route path='/Team' element={<Team/> }/>
+        <Route path='/Contact' element={<Contact/> }/>
       </Routes>
     </div>
   );

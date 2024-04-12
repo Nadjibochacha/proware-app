@@ -1,0 +1,27 @@
+#about, #team ,#services, #contact{
+    background-image: url('../images/background.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+#about .content, #team .content,#services .content, #contact .content{
+    background:#6200ff80;
+    min-height: 100vh;
+}
+#about .content h3, #team .content h3{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 140px;
+}
+#about .content h5{
+    max-width: 56vw;
+    color: white;
+    letter-spacing: 0.03rem;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 1.4rem;
+}
