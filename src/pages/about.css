@@ -1,13 +1,16 @@
-#about, #team ,#services, #contact{
+#about, #team ,#services, #contact, #port, #home{
     background-image: url('../images/background.png');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    color: white;
+    overflow-x:hidden ;
 }
-#about .content, #team .content,#services .content, #contact .content{
+#about .content,#port .content, #team .content,#services .content, #contact .content, #home .content{
     background:#6200ff80;
     min-height: 100vh;
+    overflow-x:hidden ;
 }
 #about .content h3, #team .content h3{
     text-align: center;
@@ -24,4 +27,21 @@
     margin-top: 50px;
     margin-left: 100px;
     font-size: 1.4rem;
+}
+#port .content .container h2{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+#port .content .container h5{
+    margin: 15px 0;
+    text-decoration: underline;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+}
+#port .content .container .row .col-md-3{
+    
 }

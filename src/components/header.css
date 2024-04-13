@@ -4,7 +4,11 @@
     font-weight: 600;
     color: white;
     transition: all ease-in .4s;
+    margin-right: 10px;
 }
 #header .link:hover{
     transform: scale(1.05);
+}
+#header .basic-btn{
+    background: rgba(255, 255, 255, 0.486);
 }

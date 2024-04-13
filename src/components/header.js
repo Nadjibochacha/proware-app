@@ -10,15 +10,15 @@ const Header = () => {
         <Navbar expand="lg" className="bg-transparent">
             <Container>
                 <Navbar.Brand href="/">logo</Navbar.Brand>
-                <Navbar.Toggle className='text-light bg-light' aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto w-100 justify-content-end">
-                    <Nav.Link className='link' href="/About">about</Nav.Link>
-                    <Nav.Link className='link' href="/Team">team</Nav.Link>
-                    <Nav.Link className='link' href="/Services">services</Nav.Link>
-                    <Nav.Link className='link' href="/Services">portfolio</Nav.Link>
-                    <Nav.Link className='link' href="/Contact">contact</Nav.Link>
-                </Nav>
+                <Navbar.Toggle className='basic-btn text-secondary' aria-controls="navbar-nav" />
+                <Navbar.Collapse id="navbar-nav">
+                  <Nav className="me-auto w-100 justify-content-end">
+                      <Nav.Link className='link' href="/About">about</Nav.Link>
+                      <Nav.Link className='link' href="/Team">our team</Nav.Link>
+                      <Nav.Link className='link' href="/Services">services</Nav.Link>
+                      <Nav.Link className='link' href="/Portfolio">portfolio</Nav.Link>
+                      <Nav.Link className='link' href="/Contact">contact</Nav.Link>
+                  </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

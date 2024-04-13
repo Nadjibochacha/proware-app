@@ -8,10 +8,10 @@ const Team = () => {
       <div className='content pb-2'>
         <Header/>
         <div className='container mt-5'>
-          <div className='row mt-5'>
-            <div className='col-md-4'><Member src={member} name="Enamlis Zaid Slimane" /></div>
-            <div className='col-md-4'><Member src={member} name="Chourha Abderrahmane" /></div>
-            <div className='col-md-4'><Member src={member} name="Chacha Mohammed Nadjib" /></div>
+          <div className='row mt-5 justify-content-center'>
+            <div className='col-md-4 col-12'><Member src={member} name="Enamlis Zaid Slimane" /></div>
+            <div className='col-md-4 col-12'><Member src={member} name="Chourha Abderrahmane" /></div>
+            <div className='col-md-4 col-12'><Member src={member} name="Chacha Mohammed Nadjib" /></div>
           </div>
         </div>
       </div>
@@ -19,4 +19,4 @@ const Team = () => {
   )
 }
 
-export default Team
+export default Team;

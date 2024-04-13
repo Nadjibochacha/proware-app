@@ -5,3 +5,12 @@
 .App{
     font-family:'share mono', monospace ;
 }
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #6200ff80;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#642bff,#ff22e6);
+}
