@@ -51,8 +51,9 @@ const Contact = () => {
           <div className='col-md-3 col-12'>
             <img className='Cimg' src={contact} alt='photo'/>
           </div>
+          <img src={letter} className='lettersend'/>
         </div>
-        <img src={letter} className='lettersend'/>
+        
       </div>
     </div>
   )

@@ -41,4 +41,11 @@
 #contact .lettersend{
     position: absolute;
     bottom: 0;
+    left: 0;
+    max-width: 300px;
+}
+@media (max-width:767px) {
+    #contact .lettersend{
+        display: none;
+    }
 }
