@@ -1,0 +1,44 @@
+#contact .content .inputs {
+    /* color: #723EC7; */
+    border:3px solid white ;
+    border-radius: 15px;
+    background: #41414138;
+    padding: 20px 0;
+    margin-left: 120px;
+}
+#contact .content .container h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+#contact .content .inputs .input{
+    
+}
+#contact .content .inputs .input::placeholder{
+    color:#723EC7;
+}
+#contact .content .inputs .input:focus{
+    outline: none;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.952);
+    border-color: none;
+}
+#contact .content .inputs .btn-submit{
+    background: linear-gradient(to right,#763AF5,#A604F2);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+    transition: all 0.5s ease-in;
+}
+#contact .content .inputs .btn-submit:hover{
+    transform: scale(1.04);
+    letter-spacing: 0.04rem;
+}
+#contact .content .inputs .Cimg{
+    max-width: 30rem;
+    margin-top: 20px;
+}
+#contact .lettersend{
+    position: absolute;
+    bottom: 0;
+}
