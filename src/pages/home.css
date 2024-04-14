@@ -21,6 +21,44 @@
     animation: myFrame 8S ease-out 5s  infinite alternate;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
+#home .hero h1::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+@media (max-width:450px) {
+    #home .hero h1{
+        overflow-x: visible;
+    }
+}
+@media (max-width:991px) {
+    #home .hero h1{
+        font-size: 2rem;
+        height: 3rem;
+    }
+    #home .hero h1 span{
+        display: block;
+        transform: translate(7rem,-2.4rem);
+        animation: myFrameMD 8S ease-out 5s  infinite alternate;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+    @keyframes myFrameMD {
+        0%,10%{
+            transform: translate(7rem,-2.4rem)
+        }
+        25%{
+            transform: translate(7rem,-3.4rem)
+        }
+        50%{
+            transform: translate(7rem,-4.4rem)
+        }
+        75%{
+            transform: translate(7rem,-5.3rem)
+        }
+        90%,100%{
+            transform: translate(7rem,-5.3rem)
+        }
+    }
+}
 @keyframes myFrame {
     0%,10%{
         transform: translate(10rem,-3.6rem)
@@ -72,7 +110,7 @@
 #home .stats{
     margin-top: 60px;
 }
-#home .stats .col-3{
+#home .stats .col-4{
     font-size: 1.3rem;
     text-transform: capitalize;
     font-weight: 600;
@@ -83,7 +121,7 @@
     z-index: 1;
     position: relative;
 }
-#home .content .container .stats .col-3 div{
+#home .content .container .stats .col-4 div{
     width: 130px;
     height: 130px;
     background: radial-gradient(#a771ff7a , #4c00ff6e);

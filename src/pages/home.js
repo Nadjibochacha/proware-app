@@ -9,7 +9,7 @@ const Home = () => {
         <Header/>
         <div className='container mt-5'>
             <div className='hero'>
-              <h1>pro<span className='mb-1'>ware</span><span>fesstional</span> </h1>
+              <h1>pro<span className='mb-lg-1 mb-2'>ware</span><span>fesstional</span> </h1>
               <h4>We craft custom software solutions to drive 
                 your business in the digital era. Our expert 
                 team delivers tailored technology services 
@@ -20,15 +20,15 @@ const Home = () => {
                 <Button variant='' href='/About' className='col-md-2 btn-violet ms-3 col-12'>read more</Button>
               </div>
               <div className='row stats justify-content-between ms-1'>
-                <div className='col-3 col-md-1'>
+                <div className='col-4 col-lg-1'>
                   10 <br/> projects
                   <div></div>
                 </div>
-                <div className='col-3 col-md-1'>
+                <div className='col-4 col-lg-1'>
                   10 <br/> clients
                   <div></div>
                 </div>
-                <div className='col-3 col-md-1'>
+                <div className='col-4 col-lg-1'>
                   100 <br/> reviews
                   <div></div>
                 </div>

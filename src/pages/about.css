@@ -7,6 +7,15 @@
     color: white;
     overflow-x:hidden ;
 }
+@media (max-width: 650px) {
+    #about, #team ,#services, #contact, #port, #home{
+        overflow-x: scroll;
+    }
+    #about::-webkit-scrollbar, #team::-webkit-scrollbar ,#services::-webkit-scrollbar, #contact::-webkit-scrollbar, #port::-webkit-scrollbar, #home::-webkit-scrollbar{
+        width: 3px;
+        height: 3px;
+    }
+}
 #about .content,#port .content, #team .content,#services .content, #contact .content, #home .content{
     background:radial-gradient(#6200ff7e,#4200ad70);
     min-height: 100vh;

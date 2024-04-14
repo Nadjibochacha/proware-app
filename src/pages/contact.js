@@ -15,7 +15,7 @@ const Contact = () => {
         <Header/>
         <h2 className='mt-5'>contact us</h2>
         <div className='container inputs mt-5 row'>
-          <div className='col-md-6 col-12 p-5'>
+          <div className='col-lg-6 col-12 p-5'>
             <h3>Let’s connect constellations</h3>
             <p>Let's align our constellations!
                Reach out and let the magic of collaboration illuminate our skies.
@@ -48,8 +48,8 @@ const Contact = () => {
               </Button>
             </Form>
           </div>
-          <div className='col-md-3 col-12'>
-            <img className='Cimg' src={contact} alt='photo'/>
+          <div className='col-lg-3 col-12'>
+            <center><img className='Cimg' src={contact} alt='photo'/></center>
           </div>
           <img src={letter} className='lettersend'/>
         </div>

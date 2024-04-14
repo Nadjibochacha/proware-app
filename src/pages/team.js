@@ -9,9 +9,9 @@ const Team = () => {
         <Header/>
         <div className='container mt-5'>
           <div className='row mt-5 justify-content-center'>
-            <div className='col-md-4 col-12'><Member src={member} name="Enamlis Zaid Slimane" /></div>
-            <div className='col-md-4 col-12'><Member src={member} name="Chourha Abderrahmane" /></div>
-            <div className='col-md-4 col-12'><Member src={member} name="Chacha Mohammed Nadjib" /></div>
+            <div className='col-md-4 col-12'><center><Member src={member} name="Enamlis Zaid Slimane" /></center></div>
+            <div className='col-md-4 col-12'><center><Member src={member} name="Chourha Abderrahmane" /></center></div>
+            <div className='col-md-4 col-12'><center><Member src={member} name="Chacha Mohammed Nadjib" /></center></div>
           </div>
         </div>
       </div>
