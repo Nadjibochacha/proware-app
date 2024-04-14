@@ -10,8 +10,34 @@
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-weight: 900;
-    line-height: 4rem;
+    height: 4rem;
     font-family: 'dune';
+    position: relative;
+    overflow: hidden;
+}
+#home .hero h1 span{
+    display: block;
+    transform: translate(10rem,-3.6rem);
+    animation: myFrame 8S ease-out 5s  infinite alternate;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes myFrame {
+    0%,10%{
+        transform: translate(10rem,-3.6rem)
+    }
+    25%{
+        transform: translate(10rem,-4.6rem)
+    }
+    50%{
+        transform: translate(10rem,-5.6rem)
+    }
+    75%{
+        transform: translate(10rem,-6.6rem)
+    }
+    90%,100%{
+        transform: translate(10rem,-7.5rem)
+    }
+
 }
 #home .hero h4{
     max-width: 55vw;

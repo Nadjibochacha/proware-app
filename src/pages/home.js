@@ -9,7 +9,7 @@ const Home = () => {
         <Header/>
         <div className='container mt-5'>
             <div className='hero'>
-              <h1>proware</h1>
+              <h1>pro<span className='mb-1'>ware</span><span>fesstional</span> </h1>
               <h4>We craft custom software solutions to drive 
                 your business in the digital era. Our expert 
                 team delivers tailored technology services 
