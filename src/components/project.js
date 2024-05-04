@@ -8,7 +8,7 @@ class Project extends React.Component{
                 <div className='background'></div>
                 <Card.Img variant="top" src={this.props.src} className='img' />
                 <span className='name'>
-                    <Card.Title>{this.props.title} </Card.Title>
+                    <Card.Title><a href='' className='text-white'>{this.props.title}</a></Card.Title>
                 </span>
           </Card>
         )

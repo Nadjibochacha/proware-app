@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/header';
 import member from '../images/team.png';
+import nadjib from '../images/nadjib.jpg';
 import Member from '../components/member';
 const Team = () => {
   return (
@@ -12,6 +13,7 @@ const Team = () => {
             <div className='col-md-4 col-12'><center><Member src={member} name="Enamlis Zaid Slimane" /></center></div>
             <div className='col-md-4 col-12'><center><Member src={member} name="Chourha Abderrahmane" /></center></div>
             <div className='col-md-4 col-12'><center><Member src={member} name="Chacha Mohammed Nadjib" /></center></div>
+            <div className='col-md-4 col-12'><center><Member src={member} name="Bensadi Abdelkarim" /></center></div>
           </div>
         </div>
       </div>

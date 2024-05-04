@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/header';
 import Button from 'react-bootstrap/Button';
 import './home.css';
+import {Typewriter} from 'react-simple-typewriter';
 const Home = () => {
   return (
     <div id='home' className=''>
@@ -9,7 +10,17 @@ const Home = () => {
         <Header/>
         <div className='container mt-5'>
             <div className='hero'>
-              <h1>pro<span className='mb-lg-1 mb-2'>ware</span><span>fesstional</span> </h1>
+              <h1> pro
+              <Typewriter
+                words={['Ware', 'fesstional']}
+                loop={true} // Whether to loop through the words indefinitely
+                cursor
+                cursorStyle='_'
+                typeSpeed={280} // Typing speed in milliseconds
+                deleteSpeed={70} // Deleting speed in milliseconds
+                delaySpeed={1000} // Delay between words in milliseconds
+              />
+              </h1>
               <h4>We craft custom software solutions to drive 
                 your business in the digital era. Our expert 
                 team delivers tailored technology services 

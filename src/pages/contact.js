@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/header';
 import './contact.css';
 import contact from '../images/contact.png';
@@ -8,7 +8,28 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import img from '../images/image 2.png';
 import letter from '../images/letter_send 1.png';
+import axios from 'axios';
 const Contact = () => {
+  const [firstname, setFirstname] = useState('');
+  const [lastname, setLastname] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post('http://localhost:5000/contact', {
+      name: firstname+lastname ,
+      email: email,
+      phone: phone,
+      message: message,
+    })
+     .then((res) => {
+        console.log(res.data);
+      })
+     .catch((err) => {
+        console.log(err);
+      });
+  }
   return (
     <div id='contact'>
       <div className='content pb-5'>
@@ -20,27 +41,27 @@ const Contact = () => {
             <p>Let's align our constellations!
                Reach out and let the magic of collaboration illuminate our skies.
             </p>
-            <Form className='mt-5'>
+            <Form className='mt-5' onSubmit={handleSubmit}>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="firstname">
-                  <Form.Control className='input' type="text" placeholder="First Name" />
+                  <Form.Control className='input' type="text" placeholder="First Name" onChange={e=>setFirstname(e.target.value)} />
                 </Form.Group>
                 <Form.Group as={Col} controlId="lastname">
-                  <Form.Control className='input' type="text" placeholder="Last Name" />
+                  <Form.Control className='input' type="text" placeholder="Last Name" onChange={e=>setLastname(e.target.value)}/>
                 </Form.Group>
               </Row>
 
               <Form.Group className="mb-3" controlId="email">
-                <Form.Control className='input' type='email' placeholder="Eamil" />
+                <Form.Control className='input' type='email' placeholder="Eamil" onChange={e=>setEmail(e.target.value)}/>
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="phone">
-                <Form.Control className='input' type='number' placeholder="Phone Number" />
+                <Form.Control className='input' type='number' placeholder="Phone Number" onChange={e=>setPhone(e.target.value)}/>
               </Form.Group>
 
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="message">
-                  <Form.Control className='input' as="textarea" placeholder='Message' rows={3} />
+                  <Form.Control className='input' as="textarea" placeholder='Message' rows={3} onChange={e=>setMessage(e.target.value)}/>
                 </Form.Group>
               </Row>
               <Button variant="" type="submit" className='btn-submit w-100'>
