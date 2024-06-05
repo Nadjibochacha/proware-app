@@ -3,7 +3,7 @@
     src: url('/src/fonts/Dune_Rise.ttf');
 }
 #home .hero{
-    margin-top: 140px;
+    margin-top: 150px;
 }
 #home .hero h1{
     font-size: 3rem;
@@ -19,18 +19,86 @@
     width: 0px;
     height: 0px;
 }
+
+.stats{
+    margin-top: 10rem!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 @media (max-width:450px) {
     #home .hero h1{
         overflow-x: visible;
     }
+
+
 }
 @media (max-width:991px) {
     #home .hero h1{
         font-size: 2rem;
         height: 3rem;
     }
+
+    .stat_card{
+        width: 200px;
+        height: 110px !important;
+    }
+
+    .card-body{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'share mono', monospace;
+        font-size: 36px;
+        color: white!important;
+        font-weight: bold!important;
+
+    }
+
     
 }
+
+@media (max-width: 767px) {
+    .stat_card{
+        width: 150px;
+        height: 70px !important;
+    }
+
+
+    .card-body{
+        font-size: 24px;
+
+
+    }
+
+}
+
+
+@media (max-width: 495px) {
+    .stat_card {
+        width: 150px;
+        height: 100px !important;
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        display: flex; /* Add display flex */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        font-size: 24px;
+        text-align: center !important;
+    }
+
+    .stats {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
 #home .hero h4{
     max-width: 55vw;
 }

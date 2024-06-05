@@ -9,7 +9,15 @@ const Header = () => {
     <div id='header'>
         <Navbar expand="lg" className="bg-transparent">
             <Container>
-                <Navbar.Brand href="/">logo</Navbar.Brand>
+                <Navbar.Brand href="/">
+                    <img
+                        src="/src/images/logo.png"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                        alt="Logo"
+                    />
+                </Navbar.Brand>
                 <Navbar.Toggle className='basic-btn text-secondary' aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
                   <Nav className="me-auto w-100 justify-content-end">

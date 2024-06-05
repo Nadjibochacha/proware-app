@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/header';
 import Button from 'react-bootstrap/Button';
+import GlowBackgroundCard from "../components/GlowBackgroundCard";
 import './home.css';
 import {Typewriter} from 'react-simple-typewriter';
 const Home = () => {
@@ -21,28 +22,29 @@ const Home = () => {
                 delaySpeed={1000} // Delay between words in milliseconds
               />
               </h1>
-              <h4>We craft custom software solutions to drive 
-                your business in the digital era. Our expert 
-                team delivers tailored technology services 
-                for success in today's fast-paced landscape.
-              </h4>
-              <div className='row ps-sm-3'> 
-                <Button variant='' href='/Contact' className='col-md-2 ms-1 btn-orange col-12'>contact us</Button>
-                <Button variant='' href='/About' className='col-md-2 btn-violet ms-3 col-12'>read more</Button>
+
+              <div className='hero-descrption'>
+                <p className="text-xl-left text-justify font-weight-bold">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+
               </div>
-              <div className='row stats justify-content-between ms-1'>
-                <div className='col-4 col-lg-1'>
-                  10 <br/> projects
-                  <div></div>
-                </div>
-                <div className='col-4 col-lg-1'>
-                  10 <br/> clients
-                  <div></div>
-                </div>
-                <div className='col-4 col-lg-1'>
-                  100 <br/> reviews
-                  <div></div>
-                </div>
+              <div className='row ps-sm-3'>
+                <Button variant="" href="/Contact" className="col-md-2 ms-1 btn-orange col-12 rounded-3 border-0">
+                  contact us
+                </Button>
+                <Button variant="" href="/About" className="col-md-2 btn-violet ms-3 col-12 rounded-3 border-0 col-12">
+                  read more
+                </Button>
+
+
+              </div>
+
+
+              <div className='stats'>
+
+                <GlowBackgroundCard type="Clients"/>
+                <GlowBackgroundCard type="Projects"/>
+                <GlowBackgroundCard type="Reviews"/>
+
               </div>
             </div>
         </div>
