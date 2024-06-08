@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './header.css';
-
+import logo from '../images/Artboard.png';
+import {NavLink} from 'react-router-dom';
 const Header = () => {
   return (
     <div id='header'>
@@ -11,21 +12,19 @@ const Header = () => {
             <Container>
                 <Navbar.Brand href="/">
                     <img
-                        src="/src/images/logo.png"
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
+                        src={logo}
+                        width="150"
                         alt="Logo"
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle className='basic-btn text-secondary' aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
                   <Nav className="me-auto w-100 justify-content-end">
-                      <Nav.Link className='link' href="/About">about</Nav.Link>
-                      <Nav.Link className='link' href="/Team">our team</Nav.Link>
-                      <Nav.Link className='link' href="/Services">services</Nav.Link>
-                      <Nav.Link className='link' href="/Portfolio">portfolio</Nav.Link>
-                      <Nav.Link className='link' href="/Contact">contact</Nav.Link>
+                      <NavLink className='link me-4' to="/About">about</NavLink>
+                      <NavLink className='link me-4' to="/Team">our team</NavLink>
+                      <NavLink className='link me-4' to="/Services">services</NavLink>
+                      <NavLink className='link me-4' to="/Portfolio">portfolio</NavLink>
+                      <NavLink className='link me-4' to="/Contact">contact</NavLink>
                   </Nav>
                 </Navbar.Collapse>
             </Container>

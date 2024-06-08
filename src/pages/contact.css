@@ -1,4 +1,4 @@
-#contact .content .inputs {
+#contact .content .inputs , #contact .content .contact-info{
     border: 3px solid white;
     border-radius: 15px;
     background: #41414138;

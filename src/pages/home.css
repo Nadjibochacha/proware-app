@@ -20,6 +20,11 @@
     height: 0px;
 }
 
+#home .hero-descrption{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
 .stats{
     margin-top: 10rem!important;
     display: flex;

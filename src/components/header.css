@@ -5,6 +5,7 @@
     color: white;
     transition: all ease-in .4s;
     margin-right: 10px;
+    text-decoration : none;
 }
 #header .link:hover{
     transform: scale(1.05);

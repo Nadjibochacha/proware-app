@@ -35,15 +35,24 @@ const Contact = () => {
       <div className='content pb-5'>
         <Header/>
         <h2 className='mt-5'>contact us</h2>
-        <div className='contact-info'>
-          <h3>Principal Contact</h3>
-          <p>Phone: +123 456 7890</p>
-          <p>Email: principal@example.com</p>
-          <h4>Other Contacts</h4>
-          <p>Support: support@example.com</p>
-          <p>Sales: sales@example.com</p>
-          <p>Marketing: marketing@example.com</p>
+        <div className='container contact-info'>
+          <div className='row text-start'>
+            <div className='col-lg-6'>
+              <h3>Principal Contact</h3>
+              <p>Phone: +123 456 7890</p>
+              <p>Email: principal@example.com</p>
+            </div>
+            <div className='col-lg-6'>
+              <h4>Other Contacts</h4>
+              <p>Support: support@example.com</p>
+              <p>Sales: sales@example.com</p>
+              <p>Marketing: marketing@example.com</p>
+            </div>
+          </div>
+          
+          
         </div>
+
         <div className='container inputs mt-5 row'>
           <div className='col-lg-6 col-12 p-5'>
             <h3>Let’s connect constellations</h3>
