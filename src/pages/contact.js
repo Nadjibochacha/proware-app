@@ -29,6 +29,7 @@ const Contact = () => {
      .catch((err) => {
         console.log(err);
       });
+    // console.log(firstname+lastname+email+phone+message);
   }
   return (
     <div id='contact'>

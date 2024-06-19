@@ -7,7 +7,7 @@ import axios from 'axios';
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
     React.useEffect(() => {
-        axios.get('your link')
+        axios.get('https://proware-b8c016b867b0.herokuapp.com/api/project/')
        .then(res => {
             setProjects(res.data);
         })
@@ -32,12 +32,6 @@ const Portfolio = () => {
                             <p className=' text-uppercase text-center'>soon ...</p>
                         ) 
                     }
-                </div>
-                <h5>last month</h5>                
-                <div className='row mt-2 justify-content-center'>
-                    <div className='col-md-3'><center><Project title="website" link ="link" src={projet} /></center></div>
-                    <div className='col-md-3'><center><Project title="website" link ="link" src={projet} /></center></div>
-                    <div className='col-md-3'><center><Project title="website" link ="link" src={projet} /></center></div>
                 </div>
             </div>
         </div>

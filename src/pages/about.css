@@ -6,6 +6,7 @@
     min-height: 100vh;
     color: white;
     overflow-x:hidden ;
+    overflow-y: hidden;
 }
 @media (max-width: 650px) {
     #about, #team ,#services, #contact, #port, #home{
