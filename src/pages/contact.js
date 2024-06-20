@@ -39,15 +39,14 @@ const Contact = () => {
         <div className='container contact-info'>
           <div className='row text-start'>
             <div className='col-lg-6'>
-              <h3>Principal Contact</h3>
+              <h3>External relations leader</h3>
               <p>Phone: +123 456 7890</p>
               <p>Email: principal@example.com</p>
             </div>
             <div className='col-lg-6'>
-              <h4>Other Contacts</h4>
+              <h4>Social media leader</h4>
               <p>Support: support@example.com</p>
               <p>Sales: sales@example.com</p>
-              <p>Marketing: marketing@example.com</p>
             </div>
           </div>
           
