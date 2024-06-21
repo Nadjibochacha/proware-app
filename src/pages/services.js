@@ -7,7 +7,7 @@ import axios from 'axios';
 const Services = () => {
   const [services, setServices] = useState([]);
   React.useEffect(() => {
-      axios.get('https://proware-b8c016b867b0.herokuapp.com/api/service/')
+      axios.get('https://proware-b8c016b867b0.herokuapp.com/api/teamservices/')
      .then(res => {
           setServices(res.data);
       })
@@ -23,7 +23,7 @@ const Services = () => {
           <div className='row justify-content-center align-items-center'>
             {services.length >0 ? (
               services.map(service => (
-                <div className='col-md-4'><center><Member src={service.service_image} name={service.name} /></center></div>
+                <div className='col-md-4'><center><Member src={service.image_link} name={service.service_name} /></center></div>
               ))
             ) : (
               <p className=' text-uppercase text-center'>soon...</p>
