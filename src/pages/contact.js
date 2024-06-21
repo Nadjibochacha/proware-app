@@ -17,8 +17,9 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/contact', {
-      name: firstname+lastname ,
+    axios.post('https://proware-b8c016b867b0.herokuapp.com/api/getintouch/', {
+      first_name: firstname,
+      last_name: lastname ,
       email: email,
       phone: phone,
       message: message,
@@ -73,8 +74,7 @@ const Contact = () => {
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="phone">
-                <Form.Control className='input' type='number' placeholder="Phone Number"
-                              onChange={e => setPhone(e.target.value)}/>
+                <Form.Control className='input' type='number' placeholder="Phone Number" onChange={e => setPhone(e.target.value)}/>
               </Form.Group>
 
               <Row className="mb-3">

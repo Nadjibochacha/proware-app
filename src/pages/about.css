@@ -20,7 +20,7 @@
 #about .content,#port .content, #team .content,#services .content, #contact .content, #home .content{
     background:radial-gradient(#6200ff7e,#4200ad70);
     min-height: 100vh;
-    overflow-x:hidden ;
+    overflow:hidden ;
     position: relative;
 }
 #about .content h3, #team .content h3{

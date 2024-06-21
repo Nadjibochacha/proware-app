@@ -20,10 +20,10 @@ const Services = () => {
       <div className='content pb-2'>
         <Header/>
         <div className='container mt-5'>
-          <div className='row mt-5 '>
+          <div className='row justify-content-center align-items-center'>
             {services.length >0 ? (
               services.map(service => (
-                <div className='col-md-4'><center><Member src={service.image} name={service.name} /></center></div>
+                <div className='col-md-4'><center><Member src={service.service_image} name={service.name} /></center></div>
               ))
             ) : (
               <p className=' text-uppercase text-center'>soon...</p>
