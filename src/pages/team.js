@@ -39,11 +39,13 @@ const Team = () => {
             ) : (
               members.map((member, index) => (
                 <div className='col-md-4 mb-3 mt-2' key={index}>
-                  <Member
+                  <center>
+                    <Member
                     src={member.profile_image}
                     name={member.fullname}
                     service={member.service.name}
                   />
+                  </center>
                 </div>
               ))
             )}

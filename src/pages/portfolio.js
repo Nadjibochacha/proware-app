@@ -26,7 +26,7 @@ const Portfolio = () => {
                     {
                         projects.length > 0 ? (
                             projects.map(project => (
-                                <div className='col-md-3'><center><Project title={project.title} link ={project.link} src={project.img} /></center></div>
+                                <div className='col-md-3'><center><Project title={project.name} link ={project.link} src={project.img} /></center></div>
                             ))
                         ):(
                             <p className=' text-uppercase text-center'>soon ...</p>

@@ -36,21 +36,17 @@ const Contact = () => {
       <div className='content pb-5'>
         <Header/>
         <h2 className='mt-5'>contact us</h2>
-        <div className='container contact-info'>
-          <div className='row text-start'>
+        <div className='container inputs row'>
             <div className='col-lg-6'>
               <h3>External relations leader</h3>
-              <p>Phone: +123 456 7890</p>
-              <p>Email: principal@example.com</p>
+              <p>Phone: +213 782 474 513</p>
+              <p>Email: zaidslimane@proware.tech</p>
             </div>
             <div className='col-lg-6'>
-              <h4>Social media leader</h4>
-              <p>Support: support@example.com</p>
-              <p>Sales: sales@example.com</p>
+              <h3>Social media leader</h3>
+              <p>Phone: +213 782 606 021</p>
+              <p>Email: designdept@proware.tech</p>
             </div>
-          </div>
-          
-          
         </div>
 
         <div className='container inputs mt-5 row'>
