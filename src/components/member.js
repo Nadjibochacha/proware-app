@@ -7,7 +7,7 @@ const Member = ({ src, name, service }) => {
   return (
     <Card className="card">
       <Card.Img variant="top" src={src} className="img" />
-      <Card.Body className="name align-items-center">
+      <Card.Body className="name align-items-center row">
         <Card.Title>{name}</Card.Title>
         <CardSubtitle>{service}</CardSubtitle>
       </Card.Body>
